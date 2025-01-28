@@ -7,6 +7,6 @@ char* welcome() {
 int main() {
     float x;
     scanf("%f", &x);
-    printf("You entered: %lf",x);
+    printf("You entered: %lf",double(x));
     return 0;
 }
