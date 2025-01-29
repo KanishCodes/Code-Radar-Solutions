@@ -5,10 +5,10 @@ int main() {
     int x,y;
     scanf("%d %d", &x, &y);
     if (x>y){
-        printf("%d",x);
+        printf("First");
     }
     else if(x<y){
-        printf("%d",y);
+        printf("Second");
     }
     else{
         printf("Equal");    
