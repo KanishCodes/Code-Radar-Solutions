@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
 
 int main() {
     int x,y;
@@ -14,6 +11,7 @@ int main() {
         printf("%d",y);
     }
     else{
-        printf(Equal);    }
+        printf("Equal");    
+    }
     return 0;
 }
