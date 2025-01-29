@@ -7,6 +7,6 @@ char* welcome() {
 int main() {
     int num, bit;
     scanf("%d %d", &num, &bit);
-    printf("%d", num & ~(1<<n));
+    printf("%d", num & ~(1<<bit));
     return 0;
 }
