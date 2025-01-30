@@ -2,7 +2,7 @@
 int main() {
     float x,y; 
     char op; 
-    scanf("%f %f %c", &x,&y,&op); 
+    scanf("%d %d %c", &x,&y,&op); 
     if(op=='+'){
         printf("%.2f", x+y);
     }
