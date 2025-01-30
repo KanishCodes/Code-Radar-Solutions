@@ -9,7 +9,7 @@ int main() {
         printf("Good");
     }
     else if(a=='C'){
-        printf("Average")
+        printf("Average");
     }
     else if(a=='D'){
         printf("Below Average");
