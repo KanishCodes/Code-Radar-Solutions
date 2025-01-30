@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main() {
-    float x,y; char op; scanf("%f %f %c", &x,&y,&op); 
+    float x,y; 
+    char op; 
+    scanf("%f %f %c", &x,&y,&op); 
     if(op=='+'){
         printf("%f", x+y);
     }
