@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main() {
-    float x,y; 
+    int x,y; 
     char op; 
     scanf("%d %d %c", &x,&y,&op); 
     if(op=='+'){
-        printf("%.2f", x+y);
+        printf("%d", x+y);
     }
     else if(op=='-'){
         printf("%f", x-y);
