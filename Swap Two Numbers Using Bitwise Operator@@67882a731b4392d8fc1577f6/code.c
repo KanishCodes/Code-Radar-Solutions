@@ -5,8 +5,12 @@ char* welcome() {
 }
 
 int main() {
-    int x,y;
+    int x,y,z;
     scanf("%d %d", &x,&y);
-    printf("%d %d", y,x);
-    return 0;
+    z=x;
+
+    x=y;
+    y=z;
+    printf("%d %d", x,y);
+       return 0;
 }
