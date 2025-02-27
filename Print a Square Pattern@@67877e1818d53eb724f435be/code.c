@@ -8,7 +8,7 @@ int main() {
         for(int j = 1; j <= N; j++) { // Loop to print N columns
             printf("*");
         }
-        printf("\n"); // Move to the next line after each row
+        printf(" \n"); // Move to the next line after each row
     }
 
     return 0;
