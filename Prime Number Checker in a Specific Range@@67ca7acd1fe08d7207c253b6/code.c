@@ -1,4 +1,3 @@
-
 void printPrimesInRange(int a, int b) {
     for (int x = a; x <= b; x++) {
         if (x < 2) continue;  // Skip numbers < 2 (not prime)
@@ -8,6 +7,7 @@ void printPrimesInRange(int a, int b) {
             if (x % i == 0) {
                 isPrime = 0;  // Not a prime number
                 break;
+                printf("No prime numbers");
             }
         }
 
