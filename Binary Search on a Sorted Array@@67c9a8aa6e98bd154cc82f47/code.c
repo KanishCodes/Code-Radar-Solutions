@@ -4,7 +4,7 @@ int binarySearch(int arr[], int n, int target){
     int mid;
 
     while (low <= high){
-        mid = (low+high) % 2;
+        mid = (low+high) / 2;
         target = arr[mid];
 
         if (target == arr[mid]){
