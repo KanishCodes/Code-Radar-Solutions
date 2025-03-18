@@ -1,13 +1,19 @@
-int printPrimesInRange(int a, int b){
-    int store = 0;
-    for(int x= a; x <= b; x++){
-        if (x < 2) return 0;
-        for (int i = 2; i*i <= x; i++){
-        if (x % i == 0){
-            x += store;
-            return store;
+
+void printPrimesInRange(int a, int b) {
+    for (int x = a; x <= b; x++) {
+        if (x < 2) continue;  // Skip numbers < 2 (not prime)
+
+        int isPrime = 1;  // Assume x is prime
+        for (int i = 2; i * i <= x; i++) {
+            if (x % i == 0) {
+                isPrime = 0;  // Not a prime number
+                break;
+            }
+        }
+
+        if (isPrime) {
+            printf("%d ", x);  // Print the prime number
         }
     }
-
-    }
+    printf("\n");  // New line after printing all primes
 }
