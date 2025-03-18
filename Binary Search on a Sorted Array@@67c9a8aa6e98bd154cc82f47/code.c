@@ -1,4 +1,4 @@
-int binarySearch(arr, int n, int target){
+int binarySearch(arr, n, target){
     int low = 0;
     int high = n - 1;
     int mid;
