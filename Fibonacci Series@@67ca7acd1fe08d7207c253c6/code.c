@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 int fibonacciSeries(int b) {
-    for (int i = 0; i < b; i++) {
-        printf("%d ", fibonacciSeries(i));
-    }
-    printf("\n");
+    if (b==0) return 0;
+    if (b==1) return 1;
+    return fibonacciSeries(b-1) + fibonacciSeries(b-2);
     return 0;
 }
 
