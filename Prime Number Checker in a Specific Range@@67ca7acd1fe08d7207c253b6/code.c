@@ -6,8 +6,9 @@ void printPrimesInRange(int a, int b) {
         for (int i = 2; i * i <= x; i++) {
             if (x % i == 0) {
                 isPrime = 0;  // Not a prime number
-                break;
+                
                 printf("No prime numbers");
+                break;
             }
         }
 
