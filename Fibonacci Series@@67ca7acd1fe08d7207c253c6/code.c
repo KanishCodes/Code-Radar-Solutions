@@ -8,7 +8,7 @@ int fibonacci(int n) {
 
 void fibonacciSeries(int n) {
     for (int i = 0; i < n; i++) {
-        printf("%d ", fibonacci(i));  // Call the recursive function for each term
+        printf("%d ", fibonacci(i));
     }
     printf("\n");
 }
@@ -21,8 +21,7 @@ int main() {
         printf("Invalid input\n");
         return 0;
     }
-
-    fibonacciSeries(n);  // Call function to print Fibonacci series
+    fibonacciSeries(n); 
     return 0;
 }
 
