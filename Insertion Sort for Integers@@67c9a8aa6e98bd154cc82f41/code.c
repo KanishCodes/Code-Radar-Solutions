@@ -1,4 +1,4 @@
-int insertionSort(int arr[], int a){
+void insertionSort(int arr[], int a){
     for (int i = 0; i < a - 1; i++) {  // Number of passes (each pass places the largest element at the end)
         for (int j = 0; j < a - i - 1; j++) {  // Comparing adjacent elements
             if (arr[j] > arr[j + 1]) {
@@ -12,8 +12,7 @@ int insertionSort(int arr[], int a){
 return 0;
 }
 
-
-int printArray(int arr[], int x){
+void printArray(int arr[], int x){
     for(int i = 0; i<=x;i++){
         printf("%d ", arr[i]);
     }
