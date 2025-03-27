@@ -14,7 +14,8 @@ int main(){
     max = arr[i];
    }
   }
-  int maxm=0;
+  
+  int maxm=-1;
   for(int i = 0; i<n;i++){
     if(arr[i]> maxm && arr[i]<max){
       maxm = arr[i];
