@@ -1,5 +1,6 @@
 // Your code here...#include <stdio.h>
 #include <stdio.h>
+#include <limits.h>
 int main(){
   int n; 
   scanf("%d", &n);
@@ -15,7 +16,7 @@ int main(){
    }
   }
   
-  int maxm=-1;
+  int maxm= INT_MIN;
   for(int i = 0; i<n;i++){
     if(arr[i]> maxm && arr[i]<max){
       maxm = arr[i];
