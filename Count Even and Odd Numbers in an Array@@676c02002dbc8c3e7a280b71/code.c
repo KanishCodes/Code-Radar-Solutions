@@ -11,7 +11,7 @@ int main(){
         if(arr[i]%2==0){
             counteven++;
         }
-        else{
+        else(arr[i]%2!=0){
             countodd++;
         }
     }
