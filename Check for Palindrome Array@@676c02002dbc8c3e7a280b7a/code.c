@@ -10,7 +10,7 @@ void plaindrome_checker(int arr[], int n){
         printf("YES");
     }
     else{
-        printf("NO")
+        printf("NO");
     }
 }
 
@@ -20,8 +20,8 @@ int main(){
     scanf("%d", &n);
     int arr[n];
     for(int i =0;i<n;i++){
-        scanf("%d ", arr[i]);
+        scanf("%d", arr[i]);
     }
-    plaindrome_checker(arr[], n);
+    plaindrome_checker(arr, n);
     return 0;
 }
