@@ -13,7 +13,7 @@ int main() {
 
     // Search for the element k in the array
     for (int i = 0; i < n; i++) {
-        if (k == arr[i]) {
+        if (arr[i] == k) {
             printf("%d", arr[k]);
             return 0;  // Exit after finding the element
         }
