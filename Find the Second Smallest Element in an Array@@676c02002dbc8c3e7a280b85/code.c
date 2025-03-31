@@ -10,7 +10,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int min = INT_MAX, second_max = INT_MAX;
+    int min = INT_MAX, second_min = INT_MAX;
 
     // Find the maximum element
     for (int i = 0; i < n; i++) {
