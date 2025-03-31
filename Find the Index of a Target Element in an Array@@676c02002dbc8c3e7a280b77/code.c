@@ -14,11 +14,11 @@ int main() {
     // Search for the element k in the array
     for (int i = 0; i < n; i++) {
         if (arr[i] == k) {
-            printf("%d", i);
+            printf("%d\n", i);
             return 0;  // Exit after finding the element
         }
         else{
-            return -1;
+            printf("-1\n");
         }
     }
 
