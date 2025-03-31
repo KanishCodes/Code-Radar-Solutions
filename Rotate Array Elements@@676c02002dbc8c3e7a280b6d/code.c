@@ -7,8 +7,9 @@ void rev_array(int arr[], int start,int end){
     }
 }
 int main(){
-    int n;int k;arr[n];
+    int n;int k;
     scanf("%d", &n);
+    arr[n];
     for(int i=0;i<=n;i++){
         scanf("%d ", &arr[i]);
     }
