@@ -19,7 +19,7 @@ int main(){
             freq[i]=count;
         }
     }
-    for(int i=0,i<n;i++){
+    for(int i=0;i<n;i++){
         if(freq[i] != 0){
         printf("%d %d", arr[i],freq[i]);
     }
