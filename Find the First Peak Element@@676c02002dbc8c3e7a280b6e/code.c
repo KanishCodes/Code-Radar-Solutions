@@ -25,6 +25,7 @@ int main() {
         else {
             if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
                 printf("%d ", arr[i]);
+                return 0;
             }
         }
     }
