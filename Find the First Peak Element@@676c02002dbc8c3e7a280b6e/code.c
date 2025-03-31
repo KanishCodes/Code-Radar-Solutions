@@ -1,26 +1,33 @@
 #include <stdio.h>
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    for(int i=0;i<n;i++){
-        if(i==0){
-            if(arr[i]>arr[i+1]){
-                printf("%d",arr[i]);
+
+    for (int i = 0; i < n; i++) {
+        // First element (only compare with next element)
+        if (i == 0) {
+            if (arr[i] > arr[i + 1]) {
+                printf("%d ", arr[i]);
             }
-            else if(i==n-1){
-                if(arr[n-1]>arr[n-2]){
-                    printf("%d",arr[n-2]);
-                }
+        }
+        // Last element (only compare with previous element)
+        else if (i == n - 1) {
+            if (arr[i] > arr[i - 1]) {
+                printf("%d ", arr[i]);
             }
-            else{
-                if(arr[i] > arr[i-1] && arr[i]>arr[i+1]){
-                    printf("%d", arr[i]);
-                }
+        }
+        // Middle elements (compare with both neighbors)
+        else {
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+                printf("%d ", arr[i]);
             }
         }
     }
-    return 0;}
+
+    return 0;
+}
