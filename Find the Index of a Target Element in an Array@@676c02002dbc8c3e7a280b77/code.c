@@ -14,8 +14,8 @@ int main() {
     // Search for the element k in the array
     for (int i = 0; i < n; i++) {
         if (arr[i] == k) {
-            printf("%d", k);
-            return 0;  // Exit after finding the element
+            printf("%d", i);
+            break;  // Exit after finding the element
         }
         else{
             return -1;
