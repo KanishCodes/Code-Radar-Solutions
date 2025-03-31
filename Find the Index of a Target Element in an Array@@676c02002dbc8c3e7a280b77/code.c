@@ -15,7 +15,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         if (arr[i] == k) {
             printf("%d", i);
-            break;  // Exit after finding the element
+            return 0;  // Exit after finding the element
         }
         else{
             return -1;
