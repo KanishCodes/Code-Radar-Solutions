@@ -1,5 +1,5 @@
 #include <stdio.h>
-void rev_array(arr, start,end){
+void rev_array(int arr[], int start,int end){
     for(int i=start,j=end; i<=j;i++,j--){
         int temp = arr[i];
         arr[i]=arr[j];
