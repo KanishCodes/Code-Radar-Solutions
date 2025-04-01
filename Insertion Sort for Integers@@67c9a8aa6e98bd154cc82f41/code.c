@@ -1,14 +1,13 @@
-void insertionSort(int arr[], int a){
-    for (int i = 0; i < a - 1; i++) {  // Number of passes (each pass places the largest element at the end)
-        for (int j = 0; j < a - i - 1; j++) {  // Comparing adjacent elements
-            if (arr[j] > arr[j + 1]) {
-                // Swap arr[j] and arr[j+1] to move the larger element forward
+void insertionSort(arr, n){
+    for(i=0;i<n-1;i++){
+        for(j=0;j<n-i-1;j++){
+            if(arr[j]>arr[j+1]){
                 int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                arr[j] = arr[j+1];
+                arr[j+1]=temp; 
             }
         }
-}
+    }
 }
 
 void printArray(int arr[], int x){
