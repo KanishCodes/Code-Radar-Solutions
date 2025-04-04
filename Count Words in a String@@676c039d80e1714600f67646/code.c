@@ -6,7 +6,10 @@ int main(){
     int length = strlen(string);
     int count =0;
     for (int i = 0; i < length; i++) {
-        count++;
+        if(string[i] == ' '){
+            count++;
+        }
+        
     }
     printf("%d", count);
 
