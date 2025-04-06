@@ -1,10 +1,6 @@
-#include <stdio.h>
-#include <string.h>
-int main(){
-    char string[20];
-    scanf("%s", string);
-    int length = strlen(string);
-    printf("%d",length);
-    if(string == '\0'){printf("0");}
-    return 0;
+int stringLength(const char *str) {
+    if (str[0] == '\0') {
+        return 0;
+    }
+    return strlen(str);
 }
