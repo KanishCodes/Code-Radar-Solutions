@@ -9,6 +9,6 @@ int main(){
             string[i]=string[j];
             string[j]=temp;
     }
-    fputs(st);
+    fputs(string);
     return 0;
 }
