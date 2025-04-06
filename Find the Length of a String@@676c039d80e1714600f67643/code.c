@@ -5,5 +5,6 @@ int main(){
     scanf("%s", string);
     int length = strlen(string);
     printf("%d",length);
+    if(string = '\0'){printf("0");}
     return 0;
 }
